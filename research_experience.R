@@ -1,0 +1,7 @@
+rname <- c("r_exp1","r_exp2","r_exp3")
+cname <- c("researcher1","researcher2","researcher3")
+m <- matrix(c(9,4,10,5,2,6), nrow=3, ncol=3,byrow=TRUE, dimnames=list(rname,cname))
+print(m)
+sum <- colSums(m)
+print(sum)
+cat("maximum experience : ",max(sum))
